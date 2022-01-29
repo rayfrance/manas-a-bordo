@@ -1,0 +1,25 @@
+{
+    "name": "nomedoapp",
+    "short_name": "nomedoapp",
+    "theme_color": "#184c25de",
+    "background_color": "#184c25de",
+    "display": "standalone",
+    "start_url": "./",
+    "icons": [{
+        "src": "./assets/images/logo.png",
+        "sizes": "356x356",
+        "type": "image/png"
+    },{"src": "./assets/images/logo.png",
+        "sizes": "194x194",
+        "type": "image/png"}
+    ,{"src": "./assets/images/logo.png",
+        "sizes": "96x96",
+        "type": "image/png"}
+    ,{"src": "./assets/images/logo.png",
+        "sizes": "76x76",
+        "type": "image/png"}
+    ,{"src": "./assets/images/logo.png",
+        "sizes": "36x36",
+        "type": "image/png"}
+    ]
+}

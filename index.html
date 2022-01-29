@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/materialdesignicons.css" media="all" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="./assets/images/favicons.ico" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./js/sw.js')
+        .then(function () {
+          console.log('Service Worker Registrado');
+        })
+        .catch(function () {
+          console.warn('Service Worker Falhou');
+        });
+    }
+  </script>
+
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img
+          src="./assets/images/logo.png" width="120" alt="logo"></a>
+      <!-- Menu Desktop -->
+      <ul class="right hide-on-med-and-down">
+        <!-- Link para página inicial, home ou dashboard -->
+        <li><a href="/">Home</a></li>
+        <!-- Para cada link da página repetir essa linha e alterar a função e nome mostrado -->
+        <!-- A função também tem que ser criada no arquivo route.js na pasta js  -->
+        <li><a onclick="mudaPagina1()">Link página 1</a></li>
+        <li><a onclick="mudaPagina2()">Link página 2</a></li>
+        <li><a onclick="mudaPagina3()">Link página 3</a></li>
+      </ul>
+
+      <!-- Menu mobile -->
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="./assets/images/foto_teste2.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="./assets/images/foto_teste.jpg"></a>
+            <a href="#name"><span class="white-text name">Usuário</span></a>
+            <a href="#email"><span class="white-text email">usuário@gmail.com</span></a>
+          </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>Meu app</a></li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <!-- Link para página inicial, home ou dashboard -->
+        <li><a href="/">Home</a></li>
+        <!-- Para cada link da página repetir essa linha e alterar a função e nome mostrado -->
+        <!-- A função também tem que ser criada no arquivo routes.js na pasta js  -->
+        <li><a class="waves-effect" onclick="mudaPagina1()">Link página 1</a></li>
+        <li><a class="waves-effect" onclick="mudaPagina2()">Link página 2</a></li>
+        <li><a class="waves-effect" onclick="mudaPagina3()">Link página 3</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    </div>
+  </nav>
+
+
+  <!-- Aqui é onde o conteudo das páginas são inseridos dinamicamente -->
+  <div id="content" class="container">
+    <div class="row">
+      <div class="col s12">
+        <a onclick="mudaPagina3()" class="waves-effect waves-light btn-large"><i
+            class="material-icons left">cloud</i>METRÔ</a><br><br>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="fixed-action-btn toolbar active">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a  class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+    </ul>
+  </div> -->
+
+  <div class="row"></div>
+
+  <!-- Botão Flutuante -->
+  <div class="fixed-action-btn toolbar none">
+
+    <a class="fbtn-large">
+      <i class="mdi">
+        <i class="material-icons">add</i>
+      </i>
+    </a>
+
+    <ul class="teal darken-3">
+      <li id="vacinas"><a><i class="mdi mdi-book"></i>Perfil</a></li>
+      <li id="cartao"><a><i class="mdi mdi-calendar-text"></i>cartão</a></li>
+      <li id="postos"><a><i class="mdi mdi-hospital"></i>postos</a></li>
+      <li id="home"><a href="/"><i class="mdi mdi-home-circle"></i>Home</a></li>
+    </ul>
+
+
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.esm.js"
+    integrity="sha512-Jmi+uNSDc8pyBNQbRkhwxqTtRsAzq1p0IK7dSLjaudwIIqoG2giyWRvsh4bbPd2mNSbK1GyEiBUO86RSs428UQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>
