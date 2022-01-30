@@ -79,3 +79,9 @@
   height:20px;
   border:1px solid red;
 }
+
+.mapa{
+  margin: auto;
+  position: center;
+  max-width: 500px;
+}
