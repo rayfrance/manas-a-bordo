@@ -146,3 +146,25 @@ img{
 #float.large.material-icons{
   background-color: #BB0000;
 }
+
+#logo-container{
+  height: 70px;
+  justify-content: center;
+}
+
+#img-logo{
+  margin-top: 6px;
+}
+
+h1{
+  font-size: 3.2rem;
+  font-style: bold;
+  font-weight: 500;
+}
+
+h4{
+  font-size: 1.8rem;
+  font-style: bold;
+  font-weight: 500;
+}
+
