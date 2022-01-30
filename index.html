@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/materialdesignicons.css" media="all" />
   <link rel="manifest" href="manifest.json">
-  <link rel="shortcut icon" href="./assets/images/favicons.ico" />
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" />
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
@@ -48,14 +48,14 @@
         <li>
           <div class="user-view">
             <div class="background">
-              <img src="./assets/images/foto_teste2.jpg">
+              <img src="./assets/images/fundo.jpeg">
             </div>
-            <a href="#user"><img class="circle" src="./assets/images/foto_teste.jpg"></a>
-            <a href="#name"><span class="white-text name">Usuário</span></a>
-            <a href="#email"><span class="white-text email">usuário@gmail.com</span></a>
+            <a href="#user"><img class="circle" src="./assets/images/logo1.png"></a>
+            <a href="#name"><span class="white-text name">MANAS A BORDO</span></a>
+            <a href="#email"><span class="white-text email">Seu app de mobilidade segura</span></a>
           </div>
         </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>Meu app</a></li>
+        <li><a href="#!"><i class="material-icons">settings</i>Configurações</a></li>
         <li>
           <div class="divider"></div>
         </li>
@@ -87,35 +87,23 @@
     </div>
   </div>
 
-  <!-- <div class="fixed-action-btn toolbar active">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">mode_edit</i>
-    </a>
+
+<!-- Botão flutuante -->
+    <div class="fixed-action-btn">
+     
+      <a class="btn-floating btn-large pink">
+        <i class="large material-icons">priority_high</i>
+      </a>
+    
     <ul>
-      <li><a  class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-    </ul>
-  </div> -->
+        <li><a onmouseover="showMessage()" onmouseout="hideMessage()"class="btn-floating black"><i class="material-icons">local_parking</i>
+          <div class="mensagem" >Botão de pânico</div></a></li>
+        <li><a onmouseover="showMessage()" onmouseout="hideMessage()"class="btn-floating black darken-1"><i class="material-icons">chat_bubble</i>
+          <div class="mensagem" >Abrir chat com usuária mais próxima</div></a></li>
+      </ul> 
+    </div>
 
-  <div class="row"></div>
-
-  <!-- Botão Flutuante -->
-  <div class="fixed-action-btn toolbar none">
-
-    <a class="fbtn-large">
-      <i class="mdi">
-        <i class="material-icons">add</i>
-      </i>
-    </a>
-
-    <ul class="teal darken-3">
-      <li id="vacinas"><a><i class="mdi mdi-book"></i>Perfil</a></li>
-      <li id="cartao"><a><i class="mdi mdi-calendar-text"></i>cartão</a></li>
-      <li id="postos"><a><i class="mdi mdi-hospital"></i>postos</a></li>
-      <li id="home"><a href="/"><i class="mdi mdi-home-circle"></i>Home</a></li>
-    </ul>
-
-
-  </div>
+ 
 
 
   <!--  Scripts-->
@@ -127,6 +115,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.esm.js"
     integrity="sha512-Jmi+uNSDc8pyBNQbRkhwxqTtRsAzq1p0IK7dSLjaudwIIqoG2giyWRvsh4bbPd2mNSbK1GyEiBUO86RSs428UQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    let mensagem = document.querySelector(".mensagem") ;
+
+      // mostra a mensagem
+      function showMessage(){   
+        mensagem.style.display = "block";   
+      }
+      // esconde a mensagem
+      function hideMessage(){
+        mensagem.style.display = "none"; 
+      }
+  </script>
 
 
 </body>
