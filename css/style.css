@@ -18,32 +18,64 @@
   padding: 0px 10px;
   border: 1px solid #666666;
 }
- #content {
-  width: 200%;
+#content.container {
+  padding: 0px;
+  border: 0px;
+  width: 500px;
   max-width: 500px;
-  margin: 200px auto;
-  text-align: center;
-  height: 50px;
-  font-size: 50px 50px 20px ;
+  margin-bottom: 100px;
   font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
- #content a {
+ #content a.waves-effect {
   border-radius: 10px 10px;
   cursor: pointer;
-  background: pink;
-  color: #3f3d3d;
+  background: #E66E81;
+  color: #000000;
   display: inline-block;
-  margin: 0 -2px;
-  padding: 0px 10px;
+  margin: auto auto;
   border: 1px solid #666666;
   white-space: normal;
+  height: 70px;
+  max-width: 400px;
+  text-align: center;
+  font-size: 22px;
   
+}
+.btn-large {
+  height: 54px;
+  line-height: 60px;
+  font-size: 15px;
+  padding: 0 28px;
+}
+
+.btn-large i {
+  font-size: 2.2rem;
 }
 
  #content a:hover {
   background: #333333;
 }
+
+#content2{
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content3{
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 #enviar{
   border-radius: 10px 10px;
   cursor: pointer;
@@ -80,11 +112,37 @@
   border:1px solid red;
 }
 
-.card-image{
+.card-image{ 
   max-width: fit-content;
 }
 .mapa{
   margin: auto;
-  position: center;
   max-width: 500px;
+}
+
+img{
+  max-width: 200%;
+  max-height: 200%;
+}
+
+#logosp.col.s12{
+  padding-right: 150px;
+  align-items: center;
+  height: 200px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logoade.row{
+  align-items: center;
+  height: 150px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+#float.large.material-icons{
+  background-color: #BB0000;
 }

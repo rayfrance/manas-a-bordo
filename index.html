@@ -74,9 +74,15 @@
 
 
   <!-- Aqui é onde o conteudo das páginas são inseridos dinamicamente -->
+
+  <div id="logoade"class="row">
+    <div id="logosp" class="col s12">
+      <img src="/assets/images/adesampa.png" alt="logoadesampa">
+    </div>
+  </div>
   <div id="content" class="container">
-    <div class="row">
-      <div style="align-items: center;" class="col s12">
+    <div id="content2" class="row">
+      <div id="content3" style="align-items: center;" class="col s12">
         <a onclick="mudaPagina1()" class="waves-effect waves-light btn-large"><i
             class="material-icons left">directions_railway</i>METRÔ</a><br><br>
         <a onclick="mudaPagina1()" class="waves-effect waves-light btn-large"><i
@@ -92,14 +98,13 @@
     <div class="fixed-action-btn">
      
       <a class="btn-floating btn-large pink">
-        <i class="large material-icons">priority_high</i>
+        <i id="float"class="large material-icons">priority_high</i>
       </a>
     
     <ul>
-        <li><a onmouseover="showMessage()" onmouseout="hideMessage()"class="btn-floating black"><i class="material-icons">local_parking</i>
-          <div class="mensagem" >Botão de pânico</div></a></li>
-        <li><a onmouseover="showMessage()" onmouseout="hideMessage()"class="btn-floating black darken-1"><i class="material-icons">chat_bubble</i>
-          <div class="mensagem" >Abrir chat com usuária mais próxima</div></a></li>
+        <li><a class="btn-floating black"><i class="material-icons">local_parking</i></a></li>
+        <li><a class="btn-floating black darken-1"><i class="material-icons">chat_bubble</i></a></li>
+        <li><a class="btn-floating black darken-1"><i class="material-icons">woman</i></a></li>
       </ul> 
     </div>
 
@@ -115,18 +120,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.esm.js"
     integrity="sha512-Jmi+uNSDc8pyBNQbRkhwxqTtRsAzq1p0IK7dSLjaudwIIqoG2giyWRvsh4bbPd2mNSbK1GyEiBUO86RSs428UQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    let mensagem = document.querySelector(".mensagem") ;
-
-      // mostra a mensagem
-      function showMessage(){   
-        mensagem.style.display = "block";   
-      }
-      // esconde a mensagem
-      function hideMessage(){
-        mensagem.style.display = "none"; 
-      }
-  </script>
 
 
 </body>
