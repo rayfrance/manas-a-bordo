@@ -160,11 +160,20 @@ h1{
   font-size: 3.2rem;
   font-style: bold;
   font-weight: 500;
+  
 }
 
 h4{
+  width: 550px;
   font-size: 1.8rem;
   font-style: bold;
   font-weight: 500;
+  display: block;
+  text-align: center;
+  padding-right: 110px;
+}
+
+.btn.dropdown-trigger{
+  background-color:#E66E81;
 }
 
