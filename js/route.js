@@ -41,7 +41,7 @@ function mudaPagina5() {
 }
 function mudaIndex() {
     // carregando conteudo do pagina2.html na pasta pages
-    $("#content").load("index.html"); // alterar só o nome do arquivo html
+    $("#content").load("/index.html"); // alterar só o nome do arquivo html
     // corrigindo o bug do sidenav
     $(".sidenav-overlay").click()
 }
