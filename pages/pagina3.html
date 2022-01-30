@@ -1,52 +1,18 @@
+<h1>Página 2</h1>
 <div class="row">
-    <div class="col s12 m7">
+    <form class="col s12">
+        <div class="row">
+            <!-- Campo do cep -->
+            <div class="input-field col s12">
+                <input onmouseout="consultarCepAjax()" placeholder="Ex: 51030-300" id="cep" type="text"
+                    class="validate">
+                <label for="cep">CEP</label>
+            </div>
 
-        <div class="card">
-            <div class="card-image">
-                <img src="/assets/images/exemplo.jpg">
-            </div>
-            <div class="card-content">
-                <p>Rota: PE-15/Joana Bezerra</p>
-                <p>Hora: 18:00h</p>
-                <p>Data: 28/01/2022</p>
-            </div>
-            <div class="card-action">
-                <a href="#">Homem de casaco preto por no onibus fazendo importução</a>
-            </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-            </button>
-        </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="/assets/images/exemplo.jpg">
-                <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-                <p>Rota: PE-15/Joana Bezerra</p>
-                <p>Hora: 15:00h</p>
-                <p>Data: 28/01/2022</p>
-            </div>
-            <div class="card-action">
-                <a href="#">This is a link</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-image">
-                <img src="/assets/images/exemplo.jpg">
-                <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-                <p>Rota: PE-15/Joana Bezerra</p>
-                <p>Hora: 15:00h</p>
-                <p>Data: 28/01/2022</p>
-            </div>
-            <div class="card-action">
-                <a href="#">This is a link</a>
-            </div>
-        </div>
-
-    </div>
+    </form>
 </div>
+
+<script>
+    // corrigindo bug dos inputs caso necessario alterar pelo id
+    $('#cep').focus()
+</script>

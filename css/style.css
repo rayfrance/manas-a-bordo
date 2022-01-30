@@ -12,3 +12,58 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+#back{
+  color: rgb(245, 118, 203);
+  margin: 0 -2px;
+  padding: 0px 10px;
+  border: 1px solid #666666;
+}
+ #content {
+  width: 200%;
+  max-width: 500px;
+  margin: 200px auto;
+  text-align: center;
+  height: 50px;
+  font-size: 50px 50px 20px ;
+  font-weight: bold;
+}
+
+ #content a {
+  border-radius: 10px 10px;
+  cursor: pointer;
+  background: pink;
+  color: #3f3d3d;
+  display: inline-block;
+  margin: 0 -2px;
+  padding: 0px 10px;
+  border: 1px solid #666666;
+  white-space: normal;
+  
+}
+
+ #content a:hover {
+  background: #333333;
+}
+#enviar{
+  border-radius: 10px 10px;
+  cursor: pointer;
+  background: pink;
+  color: #3f3d3d;
+  display: inline-block;
+  margin: 0 -2px;
+  padding: 0px 10px;
+  border: 1px solid #666666;
+  white-space: normal;
+
+}
+
+#cabecalho{
+  color: white;
+  background: none;
+  border-color: none;
+  font-size: 70px;
+  font-family: serif;
+  position: absolute;
+  top: -35px;
+  right: 10px;									
+}

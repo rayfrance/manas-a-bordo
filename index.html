@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Portfolio</title>
+  <title>MANAS A BORDO</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -29,7 +29,7 @@
 </head>
 
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class="light-pink lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img
           src="./assets/images/logo.png" width="120" alt="logo"></a>
       <!-- Menu Desktop -->
@@ -38,9 +38,9 @@
         <li><a href="/">Home</a></li>
         <!-- Para cada link da página repetir essa linha e alterar a função e nome mostrado -->
         <!-- A função também tem que ser criada no arquivo route.js na pasta js  -->
-        <li><a onclick="mudaPagina1()">Link página 1</a></li>
-        <li><a onclick="mudaPagina2()">Link página 2</a></li>
-        <li><a onclick="mudaPagina3()">Link página 3</a></li>
+        <li><a onclick="mudaPagina1()">Metrô</a></li>
+        <li><a onclick="mudaPagina2()">Ônibus</a></li>
+        <li><a onclick="mudaPagina3()">Ponto de Ônibus</a></li>
       </ul>
 
       <!-- Menu mobile -->
@@ -63,9 +63,9 @@
         <li><a href="/">Home</a></li>
         <!-- Para cada link da página repetir essa linha e alterar a função e nome mostrado -->
         <!-- A função também tem que ser criada no arquivo routes.js na pasta js  -->
-        <li><a class="waves-effect" onclick="mudaPagina1()">Link página 1</a></li>
-        <li><a class="waves-effect" onclick="mudaPagina2()">Link página 2</a></li>
-        <li><a class="waves-effect" onclick="mudaPagina3()">Link página 3</a></li>
+        <li><a class="waves-effect" onclick="mudaPagina1()">Metrô</a></li>
+        <li><a class="waves-effect" onclick="mudaPagina2()">Ônibus</a></li>
+        <li><a class="waves-effect" onclick="mudaPagina3()">Ponto de ônibus</a></li>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
@@ -76,9 +76,13 @@
   <!-- Aqui é onde o conteudo das páginas são inseridos dinamicamente -->
   <div id="content" class="container">
     <div class="row">
-      <div class="col s12">
-        <a onclick="mudaPagina3()" class="waves-effect waves-light btn-large"><i
-            class="material-icons left">cloud</i>METRÔ</a><br><br>
+      <div style="align-items: center;" class="col s12">
+        <a onclick="mudaPagina1()" class="waves-effect waves-light btn-large"><i
+            class="material-icons left">directions_railway</i>METRÔ</a><br><br>
+        <a onclick="mudaPagina1()" class="waves-effect waves-light btn-large"><i
+            class="material-icons left">directions_bus</i>ÔNIBUS</a><br><br>
+        <a id="ponibus" onclick="mudaPagina1()" class="waves-effect waves-light btn-large"><i
+            class="material-icons left">pin_drop</i>PONTO DE ÔNIBUS</a><br><br>
       </div>
     </div>
   </div>

@@ -1,18 +1,19 @@
-<h1>Busca CEP</h1>
-<div class="row">
-    <form class="col s12">
-        <div class="row">
-            <!-- Campo do cep -->
-            <div class="input-field col s12">
-                <input onmouseout="consultarCepAjax()" placeholder="Ex: 51030-300" id="cep" type="text"
-                    class="validate">
-                <label for="cep">CEP</label>
-            </div>
-
-    </form>
-</div>
-
-<script>
-    // corrigindo bug dos inputs caso necessario alterar pelo id
-    $('#cep').focus()
-</script>
+<button href="/" id="cabecalho"class="fbtn-large">
+    <i class="mdi">
+      <i class="material-icons">arrow_back</i>
+    </i>
+  </button>
+<div id="content" class="container">
+    <div class="row">
+      <div style="align-items: center;" class="col s12">
+        <a onclick="mudaPagina4()" class="waves-effect waves-light btn-large"><i
+            class="material-icons left">directions_bus</i>REGISTRAR DENÚNCIA</a><br><br>
+            <a onclick="mudaPagina2()" class="waves-effect waves-light btn-large"><i
+                class="material-icons left">directions_bus</i>VER DENÚNCIAS</a><br><br>
+        <a onclick="mudaPagina3()" class="waves-effect waves-light btn-large"><i
+            class="material-icons left">directions_bus</i>INFORMAÇÕES</a><br><br>
+        <a id="ponibus" onclick="mudaPagina4()" class="waves-effect waves-light btn-large"><i
+            class="material-icons left">pin_drop</i>DADOS DE MOBILIDADE SEGURA</a><br><br>
+      </div>
+    </div>
+  </div>
