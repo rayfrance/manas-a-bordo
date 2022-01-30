@@ -71,7 +71,7 @@
 .mensagem{
   display:none;
   position:absolute;
-  top: -100%; /* Usei % para que voce entenda que da para se adaptar com o tamanho do botão/container ou qualquer outra coisa a qual a mensagem esta relacionada*/
+  top: -100%;
   left:0;
   right:0;
   margin: auto;
@@ -80,6 +80,9 @@
   border:1px solid red;
 }
 
+.card-image{
+  max-width: fit-content;
+}
 .mapa{
   margin: auto;
   position: center;

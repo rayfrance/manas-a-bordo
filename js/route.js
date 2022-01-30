@@ -32,3 +32,10 @@ function mudaPagina4() {
     // corrigindo o bug do sidenav
     $(".sidenav-overlay").click()
 }
+
+function mudaPagina5() {
+    // carregando conteudo do pagina2.html na pasta pages
+    $("#content").load("pages/pagina5.html"); // alterar só o nome do arquivo html
+    // corrigindo o bug do sidenav
+    $(".sidenav-overlay").click()
+}
